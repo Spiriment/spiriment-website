@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+    *,
+    ::before, 
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: clamp(0.75em, 1.111vw, 1em);
+    }      
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FFF9F0;
+}
+
+.transitionEffect {
+    transition: all 0.3s linear;
+}
+
+@theme {
+
+    --breakpoint-tabLarge: 1024px;
+    --breakpoint-tabMid: 800px;
+    --breakpoint-tab: 750px;
+    --breakpoint-mob: 560px;
+    --font-Inter: "Inter", sans-serif;
+    --font-OpenSans: "Open Sans", sans-serif;
+    --color-headerPrimary: #10162F;
+    --color-black: #000000;
+    --color-primaryWhite: #FFF9F0;
+}
+
+
+@layer components {
+    .custom-width {
+        @apply w-[90%] mx-auto max-w-[1440px] lg:w-[83.33%]
+    }
+
+    .basic-flex {
+        @apply flex items-center
+    }
+}
