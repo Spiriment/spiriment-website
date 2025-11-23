@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @import "tailwindcss";
 
 @layer base {
@@ -15,8 +17,8 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #FFF9F0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #FFFAEC;
 }
 
 .transitionEffect {
@@ -24,16 +26,18 @@ body {
 }
 
 @theme {
-
     --breakpoint-tabLarge: 1024px;
     --breakpoint-tabMid: 800px;
     --breakpoint-tab: 750px;
     --breakpoint-mob: 560px;
-    --font-Inter: "Inter", sans-serif;
-    --font-OpenSans: "Open Sans", sans-serif;
-    --color-headerPrimary: #10162F;
+    --font-Jakarta: "Plus Jakarta Sans", sans-serif;
+    --color-primaryTheme: #1D2F21;
+    --color-darkTheme: #162419;
+    --color-secondaryTheme: #FFFAEC;
+    --color-secondaryTextTheme: #C0CBC3;
     --color-black: #000000;
-    --color-primaryWhite: #FFF9F0;
+    --color-primaryWhite: #EBEEEC;
+    --color-terracotaTheme: #5E3128;
 }
 
 
@@ -45,4 +49,34 @@ body {
     .basic-flex {
         @apply flex items-center
     }
+
+    .nav-link {
+        @apply leading-[160%] text-[1rem] text-primaryTheme capitalize
+    }
+
+    .small-texts {
+        @apply text-[1rem] leading-[160%]
+    }
+
+    .header-text {
+        @apply leading-[120%] font-bold
+    }
+
+    .label-text {
+        @apply font-medium text-[0.94rem] text-primaryWhite leading-[1.22rem]
+    }
+
+    .input-text {
+        @apply text-[0.94rem] text-[#A2B1A5] leading-[1.22rem] focus:outline-none
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none; /* IE/Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
 }
