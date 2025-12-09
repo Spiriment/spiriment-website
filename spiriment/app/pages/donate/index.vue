@@ -1,13 +1,13 @@
 <template>
-    <section class="custom-width pt-[10.94rem] mb-[7.63rem]">
+    <section class="custom-width pt-[5.94rem] mb-[7.63rem]">
         <div class="w-[61.17%] mx-auto text-center pb-[5.88rem]">
-            <h1 class="header-text text-[#5E3128] text-[3rem]">
+            <h1 class="header-text text-terracotaTheme text-[3rem]">
                 Help us build a platform where anyone can grow in faith
             </h1>
-            <p class="mt-4 mb-6 small-texts text-[#4F4F4F]">
+            <p class="mt-6 mb-8 small-texts text-[#4F4F4F]">
                 Your generosity helps build a platform where people grow in faith through mentorship, study, and daily spiritual habits
             </p>
-            <button class="w-fit mx-auto py-4 px-6 rounded-[6.25rem] text-[#FEFEFD] bg-[#5E3128]">
+            <button class="w-fit mx-auto py-4 px-6 rounded-[6.25rem] text-[#FEFEFD] bg-terracotaTheme font-bold text-[1.5rem]">
                 Give Now
             </button>
         </div>

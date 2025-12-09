@@ -55,7 +55,7 @@ body {
     }
 
     .small-texts {
-        @apply text-[1rem] leading-[160%]
+        @apply text-[1.5rem] leading-[160%]
     }
 
     .header-text {
@@ -67,7 +67,7 @@ body {
     }
 
     .input-text {
-        @apply text-[0.94rem] text-[#A2B1A5] leading-[1.22rem] focus:outline-none
+        @apply text-[0.94rem] text-terracotaTheme leading-[1.22rem] focus:outline-none
     }
 
     .hide-scrollbar::-webkit-scrollbar {

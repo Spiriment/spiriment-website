@@ -28,25 +28,33 @@ const slidingCardContents = [
         id: 1,
         title: 'Track Your Bible Journey',
         description: 'Reflect, take notes, and mark your spiritual progress chapter by chapter',
-        cardTheme: '#1D2F21'
+        cardTheme: '#1D2F21',
+         imgSrc: 'mentorProfile.png',
+        imgWidth: '60.89%'
     },
     {
         id: 2,
         title: 'Flexible Mentorship Formats',
         description: 'Whether it’s weekly video calls or occasional messages, your mentor fits your rhythm',
-        cardTheme: '#7B4034'
+        cardTheme: '#7B4034',
+         imgSrc: 'romans.png',
+        imgWidth: '60.89%'
     },
     {
         id: 3,
         title: 'Explore Topics That Matter to You',
         description: 'Study content around identity, purpose, prayer, leadership, and more',
-        cardTheme: '#112851'
+        cardTheme: '#112851',
+         imgSrc: 'streak.png',
+        imgWidth: '60.89%'
     },
     {
-        id: 1,
+        id: 4,
         title: 'Stay Accountable, Spiritually and Practically',
         description: 'Build habits, stay encouraged, and keep going even when it’s tough',
-        cardTheme: '#6A551B'
+        cardTheme: '#6A551B',
+         imgSrc: 'conversation.png',
+        imgWidth: '60.89%'
     },
 ]
 
@@ -78,7 +86,7 @@ const overlappingCardContent = [
     {
         id: 4,
         title: 'Join Group or 1-on-1 Sessions',
-        detail: 'Grow deeper with structured, encouraging mentorship',
+        detail: 'Grow deeper with structured and encouraging mentorship',
         cardColor: '#FFFAEC',
         cardTheme: '#6A551B',
         imgSrc: ''

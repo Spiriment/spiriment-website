@@ -15,11 +15,11 @@
           </div>
           <section class="mt-8.5 pt-[3.44rem] pb-[5.88rem]">
               <h2 class="text-[2.5rem] header-text text-secondaryTheme mb-33 text-center max-w-158 mx-auto"
-              >Why Mentor on Spiriment</h2>
+              >Why Mentor on Spiriment?</h2>
               <UiOverlappingSlides :slidingCardContents="slidingCardContents"/>
           </section>
           <section class="pt-13.5">
-              <h4 class="font-bold leading-[120%] text-center text-[1.75rem] text-secondaryTheme">Mentor Smarter, Not Harder</h4>
+              <h4 class="font-bold leading-[120%] text-center text-[2.5rem] text-secondaryTheme">Mentor Smarter, Not Harder</h4>
               <UiOverlappingCards :cardContent="overlappingCardContent"/>
           </section>
         </section>
@@ -33,21 +33,36 @@ const slidingCardContents = [
         title: 'Structure Without Stress',
         description: 'Reflect, take notes, and mark your spiritual progress chapter by chapter',
         cardTheme: '#A2B1A5',
-        textTheme: '#162419'
+        textTheme: '#162419',
+        imgSrc: 'mentor1.png',
+        imgWidth: '60.89%'
     },
     {
         id: 2,
-        title: 'Flexible Mentorship Formats',
-        description: 'Whether it’s weekly video calls or occasional messages, your mentor fits your rhythm',
+        title: 'Multiply Your Impact',
+        description: 'Mentor one or many mentees with flexible tools that help you stay organized and personal',
         cardTheme: '#FEEFC4',
-        textTheme: '#6A551B'
+        textTheme: '#6A551B',
+        imgSrc: 'mentor2.png',
+        imgWidth: '60.89%'
     },
     {
         id: 3,
-        title: 'Explore Topics That Matter to You',
-        description: 'Study content around identity, purpose, prayer, leadership, and more',
+        title: 'Lead With Your Strengths',
+        description: 'Focus on what you love: teaching, praying, encouraging, Spiriment handles the rest',
         cardTheme: '#98ABCD',
-        textTheme: '#0D1F3E'
+        textTheme: '#0D1F3E',
+        imgSrc: 'mentor3.png',
+        imgWidth: '100%'
+    },
+    {
+        id: 4,
+        title: 'Invest Eternally',
+        description: 'Your wisdom and experience can shape lives for Christ',
+        cardTheme: '#F5D4CD',
+        textTheme: '#5E3128',
+        imgSrc: 'mentor4.png',
+        imgWidth: '100%'
     },
 ]
 

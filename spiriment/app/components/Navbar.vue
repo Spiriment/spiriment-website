@@ -38,6 +38,24 @@
                     For Mentees
                 </nuxt-link>
             </div>
+             <li class="nav-link"
+            @click="closeDropdown">
+                 <nuxt-link to="/volunteer">
+                    volunteer
+                </nuxt-link>
+            </li>
+            <li class="nav-link"
+            @click="closeDropdown">
+                <nuxt-link to="/partnerships">
+                    partnership
+                </nuxt-link>
+            </li>
+             <li class="nav-link"
+            @click="closeDropdown">
+                <nuxt-link to="/about">
+                    about
+                </nuxt-link>
+            </li>
             <li class="nav-link"
             @click="closeDropdown">
                 <nuxt-link to="/donate">
@@ -49,25 +67,19 @@
                 <nuxt-link to="/resources">
                     resources
                 </nuxt-link>
-            </li>
+            </li>           
             <li class="nav-link"
             @click="closeDropdown">
-                 <nuxt-link to="/volunteer">
-                    volunteer
+                <nuxt-link to="/shop">
+                    shop
                 </nuxt-link>
-            </li>
-            <li class="nav-link"
-            @click="closeDropdown">
-                <nuxt-link to="/about">
-                    about
-                </nuxt-link>
-            </li>
-            <li class="nav-link"
+            </li>           
+            <!-- <li class="nav-link"
             @click="closeDropdown">
                 <nuxt-link to="/contact">
                     contact
                 </nuxt-link>
-            </li>
+            </li> -->
         </ul>
         <UiDownloadButton :isDark="true" iconTheme="#FFFAEC"/>
     </nav>

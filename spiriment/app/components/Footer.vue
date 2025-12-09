@@ -24,7 +24,7 @@
                         <div class="footer-logo mb-6">
                             <NuxtImg src="/icons/logoLight.svg" class="w-45.25"/>
                         </div>
-                         <UiDownloadButton :isDark="false" iconTheme="#1D2F21"/>
+                         <!-- <UiDownloadButton :isDark="false" iconTheme="#1D2F21"/> -->
                     </div>
                     <div class="flex gap-17">
                         <article
@@ -93,7 +93,7 @@ const footerLinks = [
             },
             {
                 name: 'Shop',
-                route: '/'
+                route: '/shop'
             },
             {
                 name: 'Partnerships',
@@ -109,10 +109,10 @@ const footerLinks = [
                 name: 'About',
                 route: '/about'
             },
-            {
-                name: 'Contact',
-                route: '/contact'
-            },
+            // {
+            //     name: 'Contact',
+            //     route: '/contact'
+            // },
         ]
     },
 
