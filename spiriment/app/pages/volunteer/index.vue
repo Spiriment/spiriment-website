@@ -1,25 +1,25 @@
 <template>
-    <section class="w-full pt-26.5 bg-terracotaTheme pb-16.25">
+    <section class="w-full pt-12 md:pt-16 lg:pt-26.5 bg-terracotaTheme pb-12 md:pb-14 lg:pb-16.25">
       <div class="custom-width">
-         <div class="w-[56.17%] mx-auto text-center">
-             <h1 class="header-text text-secondaryTheme text-[3rem]">
+         <div class="w-full md:w-[80%] lg:w-[70%] xl:w-[56.17%] mx-auto text-center">
+             <h1 class="header-text text-secondaryTheme text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-tight">
                  Use your skills to help people grow in their walk with God
              </h1>
-             <p class="mt-4 mb-6 small-texts text-secondaryTheme">
-                 We’re building Spiriment with faith and code, and we need volunteers who believe in both. If you’re a designer, developer, writer, pastor, or just passionate about discipleship, we’d love to build with you
+             <p class="mt-4 mb-6 small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-secondaryTheme">
+                 We're building Spiriment with faith and code, and we need volunteers who believe in both. If you're a designer, developer, writer, pastor, or just passionate about discipleship, we'd love to build with you
              </p>
-             <button class="w-fit mx-auto py-4 px-6 rounded-[6.25rem] bg-secondaryTheme text-[1.2rem] text-terracotaTheme font-bold">
+             <button class="w-fit mx-auto py-3 px-5 md:py-4 md:px-6 rounded-[6.25rem] bg-secondaryTheme text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] text-terracotaTheme font-bold">
                  Apply to Volunteer
              </button>
           </div>
-          <div class="mt-8.5 w-fit mx-auto max-w-249">
-             <NuxtImg src="/images/volunteer.png"/>
+          <div class="mt-6 md:mt-7 lg:mt-8.5 w-full md:w-fit mx-auto max-w-full md:max-w-249">
+             <NuxtImg src="/images/volunteer.png" class="w-full md:w-auto"/>
           </div>
       </div>
   </section>
   <section class="custom-width mt-18">
-   <div class="flex justify-between mb-6">
-      <div class="w-[36.33%]">
+   <div class="flex justify-between mb-6 max-tab:flex-col">
+      <div class="w-[36.33%] max-tab:w-full">
          <h3 class="text-terracotaTheme font-bold leading-[120%] text-[2.0625rem] mb-4">
             We welcome hearts and hands in every form
          </h3>
@@ -34,7 +34,7 @@
             Apply to Volunteer
          </button>
       </div>
-      <div class="w-76.5 mt-[0.94rem]">
+      <div class="w-76.5 mt-[0.94rem] max-tab:hidden">
          <NuxtImg src="/icons/volunteer1.svg" class="w-full"/>
       </div>
    </div>
@@ -49,55 +49,50 @@
       </div>
    </div>
   </section>
-   <section class="py-[6.19rem] flex justify-between custom-width">
-      <h2 class="text-terracotaTheme header-text text-[2.5rem] w-[33.67%]">
+   <section class="py-8 md:py-10 lg:py-[6.19rem] flex flex-col lg:flex-row justify-between custom-width gap-8 lg:gap-0">
+      <h2 class="text-terracotaTheme header-text text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] w-full lg:w-[33.67%] text-center lg:text-left leading-tight">
          Ready to join the mission?
       </h2>
-   <form class="flex flex-col gap-4">
-         <article class="input-field w-138">
-            <label for="organization" class="label-text text-terracotaTheme">Full Name/Organization <span class="text-[#E0745F]">*</span></label>
-            <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="text" name="organization" id="organization" class="input-text w-full
-               ">
+   <form class="flex flex-col gap-3 md:gap-4 w-full lg:w-auto">
+         <article class="input-field w-full lg:w-138">
+            <label for="organization" class="label-text text-terracotaTheme text-sm md:text-base">Full Name/Organization <span class="text-[#E0745F]">*</span></label>
+            <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
+               <input type="text" name="organization" id="organization" class="input-text w-full text-sm md:text-base">
             </div>
          </article>
-         <article class="input-field w-138">
-            <label for="phone" class="label-text text-terracotaTheme">Phone Number</label>
-            <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="number" name="phone" id="phone" class="input-text w-full
-               ">
+         <article class="input-field w-full lg:w-138">
+            <label for="phone" class="label-text text-terracotaTheme text-sm md:text-base">Phone Number</label>
+            <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
+               <input type="number" name="phone" id="phone" class="input-text w-full text-sm md:text-base">
             </div>
          </article>
-         <article class="input-field w-138">
-            <label for="mail" class="label-text text-terracotaTheme">Email <span class="text-[#E0745F]">*</span></label>
-            <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="email" name="mail" id="mail" placeholder="Aa" class="input-text w-full
-               ">
+         <article class="input-field w-full lg:w-138">
+            <label for="mail" class="label-text text-terracotaTheme text-sm md:text-base">Email <span class="text-[#E0745F]">*</span></label>
+            <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
+               <input type="email" name="mail" id="mail" placeholder="Aa" class="input-text w-full text-sm md:text-base">
             </div>
          </article>
-         <article class="input-field w-138">
-            <label for="skill" class="label-text text-terracotaTheme">Skill or area you'd like to help in <span span class="text-[#E0745F]">*</span></label>
-            <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="text" name="skill" id="skill" placeholder="Aa" class="input-text w-full
-               ">
+         <article class="input-field w-full lg:w-138">
+            <label for="skill" class="label-text text-terracotaTheme text-sm md:text-base">Skill or area you'd like to help in <span class="text-[#E0745F]">*</span></label>
+            <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
+               <input type="text" name="skill" id="skill" placeholder="Aa" class="input-text w-full text-sm md:text-base">
             </div>
          </article>
-         <article class="input-field w-138">
-            <label for="partnershipType" class="label-text text-terracotaTheme">Link to portfolio or past work</label>
-            <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="text" name="partnershipType" id="partnershipType" placeholder="Aa" class="input-text w-full
-               ">
+         <article class="input-field w-full lg:w-138">
+            <label for="partnershipType" class="label-text text-terracotaTheme text-sm md:text-base">Link to portfolio or past work</label>
+            <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
+               <input type="text" name="partnershipType" id="partnershipType" placeholder="Aa" class="input-text w-full text-sm md:text-base">
             </div>
          </article>
-         <article class="input-field w-138">
-            <label for="message" class="label-text text-terracotaTheme">Why you'd like to volunteer</label>
-            <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[1.125rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <textarea name="message" id="message" cols="30" rows="10" class="input-text w-full" placeholder="Aa" ></textarea>
+         <article class="input-field w-full lg:w-138">
+            <label for="message" class="label-text text-terracotaTheme text-sm md:text-base">Why you'd like to volunteer</label>
+            <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[1rem] md:rounded-[1.125rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
+               <textarea name="message" id="message" cols="30" rows="6" class="input-text w-full text-sm md:text-base resize-none" placeholder="Aa"></textarea>
             </div>
          </article>
-         <button class="w-full bg-[#EAA294] py-2.5 text-center mt-[0.56rem] rounded-[625rem] text-terracotaTheme text-[1rem] font-medium leading-[1.4rem]">Submit</button>
+         <button class="w-full bg-[#EAA294] py-2.5 text-center mt-2 md:mt-[0.56rem] rounded-[625rem] text-terracotaTheme text-sm md:text-[1rem] font-medium leading-[1.4rem] hover:opacity-90 transition-opacity">Submit</button>
    </form>
-   </section>
+</section>
 </template>
 
 <script setup>

@@ -1,14 +1,18 @@
 <template>
-  <section class="custom-width pt-[7.88rem] mb-[7.63rem]">
-    <div class="w-[56.17%] mx-auto text-center">
-        <h1 class="header-text text-primaryTheme text-[3rem]">You Don’t Have to <span class="text-[#7B4034]">Grow</span> Alone</h1>
-        <p class="mt-4 mb-6 small-texts text-primaryTheme">
-            Spiritual growth is hard when you're on your own. With Spiriment, you’ll get personalized Bible study, accountability, and a mentor to walk the journey with you
+  <section class="custom-width pt-[6.63rem] mb-[7.63rem]">
+    <div class="w-full md:w-[80%] lg:w-[70%] xl:w-[56.17%] mx-auto text-center">
+        <h1 class="header-text text-primaryTheme text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-tight">
+            You Don't Have to <span class="text-[#7B4034]">Grow</span> Alone
+        </h1>
+        <p class="mt-4 mb-6 small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-primaryTheme">
+            Spiritual growth is hard when you're on your own. With Spiriment, you'll get personalized Bible study, accountability, and a mentor to walk the journey with you
         </p>
-        <UiDownloadButton :isDark="true" iconTheme="#FFFAEC" class="mx-auto"/>
+        <div class="flex justify-center">
+            <UiDownloadButton :isDark="true" iconTheme="#FFFAEC" class="mx-auto"/>
+        </div>
     </div>
-    <div class="mt-10 w-fit mx-auto">
-        <NuxtImg src="/images/heroImage.png"/>
+    <div class="mt-6 md:mt-8 lg:mt-10 w-full md:w-fit mx-auto">
+        <NuxtImg src="/images/heroImage.png" class="w-full md:w-auto max-w-full"/>
     </div>
     <section class="mt-8.5 pt-[3.44rem] pb-[5.88rem]">
         <h2 class="text-[2.5rem] header-text text-primaryTheme mb-33 text-center max-w-158 mx-auto"

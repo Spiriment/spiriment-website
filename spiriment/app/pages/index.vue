@@ -1,47 +1,53 @@
 <template>
     <!-- <Navbar /> -->
     <section class="header bg-primaryTheme">
-        <div class="custom-width basic-flex justify-between">
-            <div class="w-[39.67%] ">
-                <h1 class="font-bold text-[3rem] text-secondaryTheme mb-4">
+        <div class="custom-width basic-flex justify-between flex-col lg:flex-row">
+            <div class="w-full lg:w-[39.67%] mb-8 lg:mb-0 max-lg:pt-[6.63rem]">
+                <h1 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-secondaryTheme mb-4 leading-tight">
                     Grow in Faith. Together.
                 </h1>
-                <p class="small-texts text-secondaryTheme font-semibold mb-5">
+                <p class="small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-secondaryTheme font-semibold mb-5 lg:mb-5">
                     Build lasting spiritual habits, connect with trusted mentors, and study the Bible in a way that transforms your daily life.
                 </p>
-                <UiDownloadButton :isDark="false" iconTheme="#1D2F21"/>
+                <div class="flex justify-start lg:justify-start">
+                    <UiDownloadButton :isDark="false" iconTheme="#1D2F21"/>
+                </div>
             </div>
-            <div class=" h-full">
-                <NuxtImg src="/images/productImage.png" class="max-h-163.25 h-full object-cover"/>
+            <div class="w-full lg:w-auto h-full mt-8 lg:mt-0">
+                <NuxtImg src="/images/productImage.png" class="md:max-h-[400px] lg:max-h-163.25 h-full w-full object-cover rounded-lg lg:rounded-none"/>
             </div>
         </div>
     </section>
-    <section class="custom-width pt-13.5 pb-12.5">
-        <h2 class="font-bold leading-[120%] text-[2.5rem] text-center text-primaryTheme mb-17">How Spiriment Works</h2>
-        <div class="bg-[#2F4E37] w-full h-[42.4rem] rounded-[1.25rem]">
-
+    
+    <section class="custom-width pt-8 md:pt-10 lg:pt-13.5 pb-8 md:pb-10 lg:pb-12.5">
+        <h2 class="font-bold leading-[120%] text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] text-center text-primaryTheme mb-8 md:mb-12 lg:mb-17">How Spiriment Works</h2>
+        <div class="bg-[#2F4E37] w-full h-[250px] md:h-[350px] lg:h-[42.4rem] rounded-2xl md:rounded-[1.25rem]">
+            <!-- Content placeholder -->
         </div>
     </section>
-    <section class="custom-width pt-13.5 pb-30.5">
-        <h4 class="font-bold leading-[120%] text-center text-[1.75rem]">A Simple Journey for Deep Spiritual Growth</h4>
+    
+    <section class="custom-width pt-8 md:pt-10 lg:pt-13.5 pb-12 md:pb-20 lg:pb-30.5">
+        <h4 class="font-bold leading-[120%] text-center text-[1.5rem] md:text-[1.625rem] lg:text-[1.75rem] mb-8 md:mb-10">A Simple Journey for Deep Spiritual Growth</h4>
         <UiOverlappingCards :cardContent="overlappingCardContent"/>
     </section>
-   <section class="custom-width pt-[3.44rem] pb-[5.19rem]">
-    <h3 class="text-[2.0625rem] leading-[120%] font-bold text-primaryTheme mb-[5.19rem] text-center">More Than Just Another Bible App</h3>
-    <div class="flex justify-between">
-        <article class="w-fit max-w-[17.265rem] rounded-3xl bg-primaryTheme py-4 px-6 text-secondaryTheme font-bold text-[1.44rem] h-fit">
-            <h5 class="leading-[120%]">Personalized Study Paths</h5>
-        </article>
-        <div class="">
-            <NuxtImg src="/images/mobileSnapshot.png" class="max-h-[39.88rem]"/>
+   
+    <section class="custom-width pt-8 md:pt-10 lg:pt-[3.44rem] pb-8 md:pb-10 lg:pb-[5.19rem]">
+        <h3 class="text-[1.75rem] md:text-[1.875rem] lg:text-[2.0625rem] leading-[120%] font-bold text-primaryTheme mb-8 md:mb-12 lg:mb-[5.19rem] text-center">More Than Just Another Bible App</h3>
+        <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8 lg:gap-4">
+            <article class="w-full lg:w-fit lg:max-w-[17.265rem] rounded-3xl bg-primaryTheme py-4 px-6 text-secondaryTheme font-bold text-[1.25rem] md:text-[1.375rem] lg:text-[1.44rem] h-fit text-center lg:text-left order-2 lg:order-1">
+                <h5 class="leading-[120%]">Personalized Study Paths</h5>
+            </article>
+            <div class="order-2">
+                <NuxtImg src="/images/mobileSnapshot.png" class="max-h-[280px] md:max-h-[350px] lg:max-h-[39.88rem] w-auto"/>
+            </div>
+            <article class="w-full lg:w-fit lg:max-w-[17.265rem] rounded-3xl bg-primaryTheme py-4 px-6 text-secondaryTheme small-texts text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-semibold h-fit self-center lg:self-end text-center lg:text-left order-3">
+                Get Bible content based on your spiritual maturity and interests
+            </article>
         </div>
-        <article class="w-fit max-w-[17.265rem] rounded-3xl bg-primaryTheme py-4 px-6 text-secondaryTheme small-texts font-semibold h-fit self-end">
-            Get Bible content based on your spiritual maturity and interests
-        </article>
-    </div>
-   </section>
-    <section class="custom-width pt-[3.44rem] pb-[5.19rem]">
-        <h2 class="text-[2.5rem] leading-[120%] font-bold text-primaryTheme mb-[5.19rem] text-center max-w-158 mx-auto"
+    </section>
+    
+    <section class="custom-width pt-8 md:pt-10 lg:pt-[3.44rem] pb-8 md:pb-10 lg:pb-[5.19rem]">
+        <h2 class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-[120%] font-bold text-primaryTheme mb-8 md:mb-12 lg:mb-[5.19rem] text-center max-w-full md:max-w-[90%] lg:max-w-158 mx-auto"
         >Designed to Help You Grow Consistently</h2>
        <UiOverlappingSlides :slidingCardContents="slidingCardContents"/>
     </section>

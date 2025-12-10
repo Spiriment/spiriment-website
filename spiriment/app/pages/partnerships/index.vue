@@ -1,73 +1,71 @@
 <template>
     <section class="bg-darkTheme">
-        <section class="custom-width pt-[6.63rem] pb-[7.63rem]">
-          <div class="w-[71.5%] mx-auto text-center">
-              <h1 class="header-text text-secondaryTheme text-[3rem]">
-                  Partner with us to equip more <br> believers for lasting spiritual growth
+        <section class="custom-width pt-[6.63rem] md:pt-12 lg:pt-[6.63rem] pb-8 md:pb-10 lg:pb-[7.63rem] lg:px-0">
+          <div class="w-full md:w-[85%] lg:w-[80%] xl:w-[71.5%] mx-auto text-center">
+              <h1 class="header-text text-secondaryTheme text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-tight">
+                  Partner with us to equip more <br class="hidden md:block"> believers for lasting spiritual growth
               </h1>
-              <p class="mt-8 mb-10 small-texts text-secondaryTheme">
-                  Whether you're a church, ministry, or discipleship-driven community, <br> Spiriment gives you tools to support and strengthen the people you lead
+              <p class="mt-4 md:mt-6 lg:mt-8 mb-6 md:mb-8 lg:mb-10 small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-secondaryTheme">
+                  Whether you're a church, ministry, or discipleship-driven community, <br class="hidden md:block"> Spiriment gives you tools to support and strengthen the people you lead
               </p>
-              <UiDownloadButton :isDark="false" iconTheme="#162419" class="mx-auto"/>
+              <div class="flex justify-center">
+                  <UiDownloadButton :isDark="false" iconTheme="#162419" class="mx-auto"/>
+              </div>
           </div>
-          <div class="mt-15 w-fit mx-auto">
-              <NuxtImg src="/images/partnership.png"/>
+          <div class="mt-8 md:mt-10 lg:mt-15 w-full md:w-fit mx-auto">
+              <NuxtImg src="/images/partnership.png" class="w-full md:w-auto max-w-full"/>
           </div>
-          <section class="mt-16.25 pt-[3.44rem] pb-[5.88rem]">
-              <h2 class="text-[2.5rem] header-text text-secondaryTheme mb-9 text-center max-w-[70%] mx-auto leading-[160%]"
-              >
-               If you lead people in the Word, we’re building this with you in mind
-            </h2>
+          
+          <section class="mt-8 md:mt-12 lg:mt-16.25 pt-8 md:pt-10 lg:pt-[3.44rem] pb-8 md:pb-10 lg:pb-[5.88rem]">
+              <h2 class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] header-text text-secondaryTheme mb-6 md:mb-7 lg:mb-9 text-center max-w-full md:max-w-[85%] lg:max-w-[80%] xl:max-w-[70%] mx-auto leading-[140%] md:leading-[150%] lg:leading-[160%]">
+                  If you lead people in the Word, we're building this with you in mind
+              </h2>
               <UiOverlappingSlides :slidingCardContents="slidingCardContents"/>
           </section>
-          <section class="pt-13.5">
-              <h4 class="text-[2.5rem] header-text text-secondaryTheme mb-9 text-center max-w-[70%] mx-auto leading-[160%]">
-                Tools that strengthen your mission and <br> multiply your impact
-            </h4>
+          
+          <section class="pt-8 md:pt-10 lg:pt-13.5">
+              <h4 class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] header-text text-secondaryTheme mb-6 md:mb-7 lg:mb-9 text-center max-w-full md:max-w-[85%] lg:max-w-[80%] xl:max-w-[70%] mx-auto leading-[140%] md:leading-[150%] lg:leading-[160%]">
+                  Tools that strengthen your mission and <br class="hidden md:block"> multiply your impact
+              </h4>
               <UiOverlappingCards :cardContent="overlappingCardContent" :isPartnership="true" :showButton="false"/>
           </section>
-          <section class="py-[6.19rem] flex justify-between">
-              <h2 class="text-primaryWhite header-text text-[2.5rem] w-[33.67%]">
+          
+          <section class="py-8 md:py-10 lg:py-[6.19rem] flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+              <h2 class="text-primaryWhite header-text text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] w-full lg:w-[33.67%] text-center lg:text-left leading-tight">
                   Ready to partner?
               </h2>
-            <form class="flex flex-col gap-4">
-                <article class="input-field w-138">
-                    <label for="organization" class="label-text">Full Name/Organization <span class="text-[#E0745F]">*</span></label>
-                    <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white">
-                        <input type="text" name="organization" id="organization" class="input-text w-full">
+            <form class="flex flex-col gap-3 md:gap-4 w-full lg:w-auto">
+                <article class="input-field w-full lg:w-138">
+                    <label for="organization" class="label-text text-sm md:text-base">Full Name/Organization <span class="text-[#E0745F]">*</span></label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input type="text" name="organization" id="organization" class="input-text w-full text-sm md:text-base">
                     </div>
                 </article>
-                <article class="input-field w-138">
-                    <label for="phone" class="label-text">Phone Number</label>
-                    <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white">
-                        <input type="number" name="phone" id="phone" class="input-text w-full">
+                <article class="input-field w-full lg:w-138">
+                    <label for="phone" class="label-text text-sm md:text-base">Phone Number</label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input type="number" name="phone" id="phone" class="input-text w-full text-sm md:text-base">
                     </div>
                 </article>
-                <article class="input-field w-138">
-                    <label for="mail" class="label-text">Email <span class="text-[#E0745F]">*</span></label>
-                    <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white">
-                        <input type="email" name="mail" id="mail" placeholder="Aa" class="input-text w-full">
+                <article class="input-field w-full lg:w-138">
+                    <label for="mail" class="label-text text-sm md:text-base">Email <span class="text-[#E0745F]">*</span></label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input type="email" name="mail" id="mail" placeholder="Aa" class="input-text w-full text-sm md:text-base">
                     </div>
                 </article>
-                <!-- <article class="input-field w-138">
-                    <label for="skill" class="label-text">Skill or area you'd like to help in <span>*</span></label>
-                    <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white">
-                        <input type="text" name="skill" id="skill" placeholder="Aa" class="input-text w-full">
-                    </div>
-                </article> -->
-                <article class="input-field w-138">
-                    <label for="partnershipType" class="label-text">Type of partnership (church, ministry, fellowship, org., etc.)</label>
-                    <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[624.9rem] bg-white">
-                        <input type="text" name="partnershipType" id="partnershipType" placeholder="Aa" class="input-text w-full">
+                <article class="input-field w-full lg:w-138">
+                    <label for="partnershipType" class="label-text text-sm md:text-base">Type of partnership (church, ministry, fellowship, org., etc.)</label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input type="text" name="partnershipType" id="partnershipType" placeholder="Aa" class="input-text w-full text-sm md:text-base">
                     </div>
                 </article>
-                <article class="input-field w-138">
-                    <label for="message" class="label-text">Message / Interest summary</label>
-                    <div class="mt-[0.57rem] py-[0.66rem] px-[0.813rem] rounded-[1.125rem] bg-white">
-                        <textarea name="message" id="message" cols="30" rows="10" class="input-text w-full" placeholder="Aa" ></textarea>
+                <article class="input-field w-full lg:w-138">
+                    <label for="message" class="label-text text-sm md:text-base">Message / Interest summary</label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[1rem] md:rounded-[1.125rem] bg-white">
+                        <textarea name="message" id="message" cols="30" rows="6" class="input-text w-full text-sm md:text-base resize-none" placeholder="Aa"></textarea>
                     </div>
                 </article>
-                <button class="w-full bg-[#A2B1A5] py-2.5 text-center mt-[0.56rem] rounded-[625rem] text-darkTheme text-[1rem] font-medium leading-[1.4rem]">Send Request</button>
+                <button class="w-full bg-[#A2B1A5] py-2.5 text-center mt-2 md:mt-[0.56rem] rounded-[625rem] text-darkTheme text-sm md:text-[1rem] font-medium leading-[1.4rem] hover:opacity-90 transition-opacity">Send Request</button>
             </form>
           </section>
         </section>

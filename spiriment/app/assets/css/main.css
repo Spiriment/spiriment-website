@@ -26,7 +26,7 @@ body {
 }
 
 @theme {
-    --breakpoint-tabLarge: 1024px;
+    --breakpoint-tabLarge: 1025px;
     --breakpoint-tabMid: 800px;
     --breakpoint-tab: 750px;
     --breakpoint-mob: 560px;
