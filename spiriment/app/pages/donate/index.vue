@@ -5,7 +5,7 @@
                 Help us build a platform where anyone can grow in faith
             </h1>
             <p class="mt-4 md:mt-5 lg:mt-6 mb-6 md:mb-7 lg:mb-8 small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-[#4F4F4F]">
-                Your generosity helps build a platform where people grow in faith through mentorship, study, and daily spiritual habits
+                Your support makes it possible for more people to benefit from our platform, deepening their faith through mentorship, study, and daily spiritual habits.
             </p>
             <button class="w-fit mx-auto py-3 px-5 md:py-4 md:px-6 rounded-[6.25rem] text-[#FEFEFD] bg-terracotaTheme font-bold text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] hover:opacity-90 transition-opacity">
                 Give Now

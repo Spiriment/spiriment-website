@@ -25,6 +25,13 @@
                         <div class="footer-logo mb-4 md:mb-5 lg:mb-6 flex justify-center lg:justify-start">
                             <NuxtImg src="/icons/logoLight.svg" class="w-32 md:w-40 lg:w-45.25"/>
                         </div>
+                        <div class="social-links text-secondaryTheme basic-flex gap-4 justify-center">
+                            <Icon name="uiw:facebook" size="30"/>
+                            <Icon name="mdi:instagram" size="30"/>
+                            <Icon name="iconoir:youtube-solid" size="30"/>
+                            <Icon name="prime:twitter" size="30"/>
+                            <Icon name="uiw:linkedin" size="30"/>
+                        </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-8 md:gap-12 lg:gap-17">
                         <article
