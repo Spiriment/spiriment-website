@@ -26,14 +26,15 @@
                             <NuxtImg src="/icons/logoLight.svg" class="w-32 md:w-40 lg:w-45.25"/>
                         </div>
                         <div class="social-links text-secondaryTheme basic-flex gap-4 justify-center">
-                            <Icon name="uiw:facebook" size="30"/>
-                            <Icon name="mdi:instagram" size="30"/>
+                            <Icon name="teenyicons:instagram-solid" size="30"/>
+                            <Icon name="ic:baseline-tiktok" size="30"/>
                             <Icon name="iconoir:youtube-solid" size="30"/>
-                            <Icon name="prime:twitter" size="30"/>
-                            <Icon name="uiw:linkedin" size="30"/>
+                            <Icon name="uiw:facebook" size="30"/>
+                            <!-- <Icon name="prime:twitter" size="30"/>
+                            <Icon name="uiw:linkedin" size="30"/> -->
                         </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-8 md:gap-12 lg:gap-17">
+                    <div class="flex flex-col sm:flex-row gap-8 md:gap-12 lg:gap-17 sm:justify-center">
                         <article
                         v-for="item in footerLinks"
                         :key="item.id"
@@ -58,7 +59,8 @@
                         <label for="email" class="uppercase header-text text-[0.875rem] md:text-[1rem] text-primaryWhite text-center lg:text-left">Enter email for updates</label>
                         <div class="bg-[#2F4E37] p-3 md:p-4 rounded-[6.25rem] basic-flex justify-between w-full lg:w-[20.19rem]">
                             <input type="email" name="email" id="email" class="small-texts text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] text-secondaryTextTheme bg-transparent focus:outline-none w-full" placeholder="Enter email address">
-                            <span class="w-5 h-5 md:w-6.5 md:h-6.5 rounded-full bg-secondaryTextTheme flex-shrink-0"></span>
+                            <Icon name="raphael:arrowright" size="30" class="text-secondaryTextTheme"/>
+                            <!-- <span class="w-5 h-5 md:w-6.5 md:h-6.5 rounded-full bg-secondaryTextTheme flex-shrink-0"></span> -->
                         </div>
                     </div>
                     <div class="small-texts text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] text-secondaryTextTheme flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">

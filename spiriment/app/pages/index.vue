@@ -7,7 +7,7 @@
                     Grow in Faith. Together.
                 </h1>
                 <p class="small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-secondaryTheme font-semibold mb-5 lg:mb-5">
-                    Build lasting spiritual habits, connect with trusted mentors, and study the Bible in a way that transforms your daily life.
+                     Build lasting spiritual habits, study the Bible in a way that transform your daily life and connect with trusted Christian mentors.
                 </p>
                 <div class="flex justify-start lg:justify-start">
                     <UiDownloadButton :isDark="false" iconTheme="#1D2F21"/>
