@@ -1,8 +1,7 @@
 <template>
    <section ref="sectionRef">
         <div 
-        class="md:mt-8 lg:mt-[3.813rem]"
-        :class="activateSlide ? 'overflow-y-auto h-screen' : ''"
+        class="md:mt-8 lg:mt-[3.813rem] border-2 border-[red] pt-20 overflow-y-auto h-screen"
         >
             <article
                 v-for="(item, index) in cardContent"
@@ -77,7 +76,7 @@
 const stickyOffset = ref(0)
 const sectionRef = ref(null)
 let observer = null
-const activateSlide = ref(false)
+const active = ref(false)
 
     const onEnterViewport = () => {
     console.log('Component entered viewport')
@@ -94,11 +93,8 @@ const activateSlide = ref(false)
         ([entry]) => {
             if (entry.isIntersecting) {
                 onEnterViewport()
-                // activateSlide.value = entry.intersectionRatio >= 0.3
-                console.log(activateSlide.value)
             } else {
                 onLeaveViewport()
-                console.log(activateSlide.value)
             }
         },
         {

@@ -10,5 +10,16 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image']
+  // vgsap: {
+  //   presets: [],
+  //   breakpoint: 768,
+  //   scroller: '',
+  //   composable: true
+  // },
+  modules: [
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@nuxt/image',
+    'v-gsap-nuxt'
+  ]
 })

@@ -26,9 +26,11 @@
         </div>
     </section>
     
-    <section class="custom-width pt-8 md:pt-10 lg:pt-13.5 pb-12 md:pb-20 lg:pb-30.5">
-        <h4 class="font-bold leading-[120%] text-center text-[1.5rem] md:text-[1.625rem] lg:text-[1.75rem] mb-8 md:mb-10">A Simple Journey for Deep Spiritual Growth</h4>
-        <UiOverlappingCards :cardContent="overlappingCardContent"/>
+    <section class="pt-8 md:pt-10 lg:pt-13.5 pb-12 md:pb-20 lg:pb-30.5">
+        <h4 class="custom-width font-bold leading-[120%] text-center text-[1.5rem] md:text-[1.625rem] lg:text-[1.75rem] mb-8 md:mb-10">A Simple Journey for Deep Spiritual Growth</h4>
+        <UiOverlappingCards :cardContent="overlappingCardContent"
+        id="thisCard"
+        />
     </section>
    
     <section class="custom-width pt-8 md:pt-10 lg:pt-[3.44rem] pb-8 md:pb-10 lg:pb-[5.19rem]">

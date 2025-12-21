@@ -25,6 +25,10 @@ body {
     transition: all 0.3s linear;
 }
 
+.specialTransitionEffect {
+    transition: all 0.5s linear;
+}
+
 @theme {
     --breakpoint-tabLarge: 1025px;
     --breakpoint-tabMid: 800px;
@@ -44,6 +48,10 @@ body {
 @layer components {
     .custom-width {
         @apply w-[90%] mx-auto max-w-[1440px] lg:w-[83.33%]
+    }
+
+    .hoverEffect {
+        @apply hover:scale-105 active:scale-95 transition cursor-pointer
     }
 
     .basic-flex {

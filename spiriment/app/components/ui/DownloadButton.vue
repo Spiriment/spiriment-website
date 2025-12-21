@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="basic-flex px-6 py-4 rounded-[6.25rem] gap-4 w-fit"
+    class="basic-flex px-6 py-4 rounded-[6.25rem] gap-4 w-fit hoverEffect transitionEffect"
     :class="isDark ? 'bg-primaryTheme' : 'bg-secondaryTheme'"
     :style="{ backgroundColor: textTheme}"
   >
