@@ -46,7 +46,7 @@
                                 v-for="(path,index) in item.paths"
                                 :key="index"
                                 >
-                                <nuxt-link :to="path.route" class="hover:text-secondaryTheme transition-colors">
+                                <nuxt-link :to="path.route" class="hover:text-secondaryTheme transitionEffect transition-colors">
                                     {{ path.name }}
                                 </nuxt-link>
                             </li>

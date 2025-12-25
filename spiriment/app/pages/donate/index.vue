@@ -15,7 +15,9 @@
             <h4 class="font-bold leading-[120%] text-center text-[1.5rem] md:text-[1.625rem] lg:text-[1.75rem] mb-6 md:mb-8">
                 Why Your Donation Matters
             </h4>
-            <UiOverlappingCards :cardContent="overlappingCardContent" :showButton="false"/>
+            <UiOverlappingCards :cardContent="overlappingCardContent" :showButton="false"
+            :isDonatePage="true"
+            />
         </section>
   </section>
 </template>

@@ -59,7 +59,7 @@ body {
     }
 
     .nav-link {
-        @apply leading-[160%] text-[1rem] text-primaryTheme capitalize
+        @apply leading-[160%] text-[1rem] text-primaryTheme capitalize hover:text-darkTheme
     }
 
     .small-texts {

@@ -30,7 +30,7 @@
                         {{ item.detail }}
 
                     </p>
-                    <div class="flex justify-center lg:justify-start">
+                    <div class="flex justify-center lg:justify-start transitionEffect hoverEffect w-fit">
                         <UiDownloadButton 
                             v-if="showButton"
                             :isDark="false"
@@ -43,6 +43,13 @@
                         :style="{ color: item.cardTheme, backgroundColor: item.cardColor}"
                         >
                             Become a Partner
+                        </button>
+                        <button 
+                        v-if="isDonatePage"
+                        class="py-3 px-5 md:py-4 md:px-6 rounded-[6.25rem] text-base font-bold"
+                        :style="{ color: item.cardTheme, backgroundColor: item.cardColor}"
+                        >
+                            Give Now
                         </button>
                     </div>
                 </div>
@@ -69,6 +76,10 @@
         default: true
     },
     isPartnership: {
+        type: Boolean,
+        default: false
+    },
+    isDonatePage: {
         type: Boolean,
         default: false
     }

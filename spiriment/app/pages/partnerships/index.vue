@@ -61,7 +61,7 @@
                 </article>
                 <article class="input-field w-full lg:w-138">
                     <label for="message" class="label-text text-sm md:text-base">Message / Interest summary</label>
-                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[1rem] md:rounded-[1.125rem] bg-white">
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-2xl md:rounded-[1.125rem] bg-white">
                         <textarea name="message" id="message" cols="30" rows="6" class="input-text w-full text-sm md:text-base resize-none" placeholder="Aa"></textarea>
                     </div>
                 </article>

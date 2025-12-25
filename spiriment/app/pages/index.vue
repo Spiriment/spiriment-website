@@ -33,20 +33,7 @@
         />
     </section>
    
-    <section class="custom-width pt-8 md:pt-10 lg:pt-[3.44rem] pb-8 md:pb-10 lg:pb-[5.19rem]">
-        <h3 class="text-[1.75rem] md:text-[1.875rem] lg:text-[2.0625rem] leading-[120%] font-bold text-primaryTheme mb-8 md:mb-12 lg:mb-[5.19rem] text-center">More Than Just Another Bible App</h3>
-        <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8 lg:gap-4">
-            <article class="w-full lg:w-fit lg:max-w-[17.265rem] rounded-3xl bg-primaryTheme py-4 px-6 text-secondaryTheme font-bold text-[1.25rem] md:text-[1.375rem] lg:text-[1.44rem] h-fit text-center lg:text-left order-2 lg:order-1">
-                <h5 class="leading-[120%]">Personalized Study Paths</h5>
-            </article>
-            <div class="order-2">
-                <NuxtImg src="/images/mobileSnapshot.png" class="max-h-[280px] md:max-h-[350px] lg:max-h-[39.88rem] w-auto"/>
-            </div>
-            <article class="w-full lg:w-fit lg:max-w-[17.265rem] rounded-3xl bg-primaryTheme py-4 px-6 text-secondaryTheme small-texts text-[1rem] md:text-[1.125rem] lg:text-[1.5rem] font-semibold h-fit self-center lg:self-end text-center lg:text-left order-3">
-                Get Bible content based on your spiritual maturity and interests
-            </article>
-        </div>
-    </section>
+   <UiFeatures class="sticky"/>
     
     <section class="custom-width pt-8 md:pt-10 lg:pt-[3.44rem] pb-8 md:pb-10 lg:pb-[5.19rem]">
         <h2 class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-[120%] font-bold text-primaryTheme mb-8 md:mb-12 lg:mb-[5.19rem] text-center max-w-full md:max-w-[90%] lg:max-w-158 mx-auto"
@@ -130,6 +117,6 @@ const overlappingCardContent = [
 
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+ 
 </style>

@@ -9,7 +9,7 @@
 
         <!-- Desktop Navigation (hidden on mobile) -->
         <ul class="max-tabLarge:hidden basic-flex gap-6 relative">
-            <li class="nav-link cursor-pointer flex items-center gap-2"
+            <li class="nav-link cursor-pointer flex items-center gap-2 transitionEffect"
               @click="showDropdown = !showDropdown"
             >
                <span>mentorship</span>
@@ -39,37 +39,37 @@
                     For Mentees
                 </nuxt-link>
             </div>
-             <li class="nav-link"
+             <li class="nav-link transitionEffect"
             @click="closeDropdown">
                  <nuxt-link to="/volunteer">
                     volunteer
                 </nuxt-link>
             </li>
-            <li class="nav-link"
+            <li class="nav-link transitionEffect"
             @click="closeDropdown">
                 <nuxt-link to="/partnerships">
                     partnership
                 </nuxt-link>
             </li>
-             <li class="nav-link"
+             <li class="nav-link transitionEffect"
             @click="closeDropdown">
                 <nuxt-link to="/about">
                     about
                 </nuxt-link>
             </li>
-            <li class="nav-link"
+            <li class="nav-link transitionEffect"
             @click="closeDropdown">
                 <nuxt-link to="/donate">
                     donate
                 </nuxt-link>
             </li>
-            <li class="nav-link"
+            <li class="nav-link transitionEffect"
             @click="closeDropdown">
                 <nuxt-link to="/resources">
                     resources
                 </nuxt-link>
             </li>           
-            <li class="nav-link"
+            <li class="nav-link transitionEffect"
             @click="closeDropdown">
                 <nuxt-link to="/shop">
                     shop
