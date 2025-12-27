@@ -30,7 +30,7 @@
                         {{ item.detail }}
 
                     </p>
-                    <div class="flex justify-center lg:justify-start transitionEffect hoverEffect w-fit">
+                    <div class="flex justify-center lg:justify-start transitionEffect hoverEffect w-fit max-lg:mx-auto">
                         <UiDownloadButton 
                             v-if="showButton"
                             :isDark="false"
@@ -66,7 +66,7 @@
 </template>
 
 <script setup>
- defineProps({
+defineProps({
     cardContent: {
         type: Array,
         required: true
@@ -90,22 +90,21 @@ const sectionRef = ref(null)
 let observer = null
 const activateSlide = ref(false)
 
-    const onEnterViewport = () => {
+const onEnterViewport = () => {
     console.log('Component entered viewport')
     // 👉 Run animation / function here
-    }
+}
 
-    const onLeaveViewport = () => {
+const onLeaveViewport = () => {
     console.log('Component left viewport')
     // 👉 Reverse animation or cleanup
-    }
+}
 
-    onMounted(() => {
+onMounted(() => {
     observer = new IntersectionObserver(
         ([entry]) => {
             if (entry.isIntersecting) {
                 onEnterViewport()
-                // activateSlide.value = entry.intersectionRatio >= 0.3
                 console.log(activateSlide.value)
             } else {
                 onLeaveViewport()
@@ -125,32 +124,14 @@ const activateSlide = ref(false)
     onBeforeUnmount(() => {
         if (observer && sectionRef.value) {
             observer.unobserve(sectionRef.value)
-        }
-    })
+    }
+})
 
 onMounted(() => {
   // safe: window exists only on client
   stickyOffset.value = 0.1 * window.innerHeight // ≈ 80% overlap
 })
 </script>
-
-<!-- <script setup>
-    defineProps({
-    cardContent: {
-        type: Array,
-        required: true
-    },
-    showButton: {
-        type: Boolean,
-        default: true
-    },
-    isPartnership: {
-        type: Boolean,
-        default: false
-    }
-    })
-</script> -->
-
 
 <style lang="scss" scoped>
 
