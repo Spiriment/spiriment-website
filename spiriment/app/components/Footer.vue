@@ -64,7 +64,11 @@
                         </div>
                     </div>
                     <div class="small-texts text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] text-secondaryTextTheme flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">
-                        <button class="underline hover:text-secondaryTheme transition-colors">Privacy Policy</button>
+                        <button class="underline hover:text-secondaryTheme transition-colors">
+                            <nuxt-link to="/privacy">
+                                Privacy Policy
+                            </nuxt-link>
+                        </button>
                         <button class="underline hover:text-secondaryTheme transition-colors">Terms</button>
                     </div>
                 </div>
