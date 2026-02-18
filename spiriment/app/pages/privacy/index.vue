@@ -352,14 +352,16 @@
             How Can You Review, Update, or Delete the Data We Collect From You?
           </h2>
           <p class="text-sm leading-relaxed mb-4" :style="{ color: themeColors.darkTheme }">You have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information.</p>
-          <a :href="contactUrl" target="_blank" 
+          <nuxt-link 
+          to="/contact"
+           target="_blank" 
              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200"
              :style="{ backgroundColor: themeColors.terracotaTheme, color: themeColors.primaryWhite }"
              @mouseenter="e => e.target.style.backgroundColor = themeColors.primaryTheme"
              @mouseleave="e => e.target.style.backgroundColor = themeColors.terracotaTheme">
             Submit a Request
             <span>→</span>
-          </a>
+        </nuxt-link>
         </section>
       </div>
 
@@ -386,7 +388,7 @@ const themeColors = {
 
 // Contact information
 const contactEmail = 'spiriment@gmail.com'
-const contactUrl = 'http://www.spiriment.com/about'
+const contactUrl = 'http://www.spiriment.com/contact'
 
 // Table of contents items
 const tocItems = [
@@ -522,7 +524,7 @@ const usRights = [
 
 // Exercise methods with HTML
 const exerciseMethods = [
-  'Visiting <a href="http://www.spiriment.com/about" class="hover:underline" style="color: #5E3128;">http://www.spiriment.com/about</a>',
+  'Visiting <a href="http://www.spiriment.com/contact" class="hover:underline" style="color: #5E3128;">http://www.spiriment.com/contact</a>',
   'Emailing us at <a href="mailto:spiriment@gmail.com" class="hover:underline" style="color: #5E3128;">spiriment@gmail.com</a>',
   'Visiting <a href="http://www.spiriment.com" class="hover:underline" style="color: #5E3128;">http://www.spiriment.com</a>'
 ]
