@@ -75,6 +75,12 @@
                     shop
                 </nuxt-link>
             </li>
+            <li class="nav-link transitionEffect"
+            @click="closeDropdown">
+                <nuxt-link to="/contact">
+                    contact
+                </nuxt-link>
+            </li>
         </ul>
 
         <!-- Desktop Download Button (hidden on mobile) -->
@@ -258,6 +264,7 @@ const mobileLinks = [
   { to: '/donate', label: 'Donate' },
   { to: '/resources', label: 'Resources' },
   { to: '/shop', label: 'Shop' },
+  { to: '/contact', label: 'Contact' }
 ]
 
 // Close mobile menu on route change

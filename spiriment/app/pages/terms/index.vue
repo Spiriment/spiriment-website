@@ -297,7 +297,7 @@
           <span>←</span> View Privacy Policy
         </NuxtLink>
         <p class="text-xs" :style="{ color: themeColors.secondaryTextTheme }">© 2026 Spiriment. All rights reserved.</p>
-        <button @click="scrollToTop" class="text-sm hover:underline flex items-center gap-1" :style="{ color: themeColors.terracotaTheme }">
+        <button @click="scrollToTop" class="cursor-pointer text-sm hover:underline flex items-center gap-1" :style="{ color: themeColors.terracotaTheme }">
           <span>↑</span> Back to Top
         </button>
       </div>

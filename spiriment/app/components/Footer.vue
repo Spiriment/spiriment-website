@@ -69,7 +69,11 @@
                                 Privacy Policy
                             </nuxt-link>
                         </button>
-                        <button class="underline hover:text-secondaryTheme transition-colors">Terms</button>
+                        <button class="underline hover:text-secondaryTheme transition-colors">
+                            <nuxt-link to="/terms">
+                                Terms
+                            </nuxt-link>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -112,6 +116,10 @@ const footerLinks = [
             {
                 name: 'Partnerships',
                 route: '/partnerships'
+            },
+            {
+                name: 'FAQ',
+                route: '/faq'
             },
         ]
     },

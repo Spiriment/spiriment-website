@@ -354,7 +354,6 @@
           <p class="text-sm leading-relaxed mb-4" :style="{ color: themeColors.darkTheme }">You have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information.</p>
           <nuxt-link 
           to="/contact"
-           target="_blank" 
              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200"
              :style="{ backgroundColor: themeColors.terracotaTheme, color: themeColors.primaryWhite }"
              @mouseenter="e => e.target.style.backgroundColor = themeColors.primaryTheme"
