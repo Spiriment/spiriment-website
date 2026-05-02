@@ -1,38 +1,42 @@
 import { ref, reactive } from 'vue'
 import { useToast } from 'vue-toastification'
 
-// ─────────────────────────────────────────────
+const BASE_URL = 'https://api.paxify.org'
+
+// ─────────────────────────────────────────────────────────────
 //  useFormSubmit
-//  @param {string} subject  - e.g. 'CONTACT FORM', 'PARTNERSHIP FORM', 'VOLUNTEER FORM'
-//  @param {object} options  - successMessage, errorMessage, onSuccess
-// ─────────────────────────────────────────────
-export function useFormSubmit(subject, options = {}) {
+//  @param {string} type     - 'GENERAL' | 'PARTNERSHIP' | 'VOLUNTEER'
+//  @param {object} options  - successMessage, errorMessage, onSuccess, extraFields
+// ─────────────────────────────────────────────────────────────
+export function useFormSubmit(type, options = {}) {
   const toast = useToast()
   const loading = ref(false)
   const errors = ref(null)
 
+  // Base fields shared across all form types
   const form = reactive({
     name: '',
     email: '',
-    subject,
+    phone: '',
     message: '',
-    // extend with extra fields per page — e.g. organisation, role, phone
+    type,
+    // Spread any form-specific fields (e.g. partnershipType, skill, portfolioLink)
     ...options.extraFields,
   })
 
   const resetForm = () => {
     Object.keys(form).forEach((key) => {
-      if (key === 'subject') return // keep subject intact
+      if (key === 'type') return // keep type intact
       form[key] = ''
     })
   }
-  
+
   const submit = async () => {
     loading.value = true
     errors.value = null
 
     try {
-      await $fetch('https://api.paxify.org/api/contact', {
+      await $fetch(`${BASE_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: { ...form },

@@ -34,102 +34,101 @@
               <h2 class="text-primaryWhite header-text text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] w-full lg:w-[33.67%] text-center lg:text-left leading-tight">
                   Ready to partner?
               </h2>
-              <form class="flex flex-col gap-3 md:gap-4 w-full lg:w-auto" @submit.prevent="handleSubmit">
-                <!-- Full Name / Organization -->
-                <article class="input-field w-full lg:w-138">
-                <label for="organization" class="label-text text-sm md:text-base">
-                    Full Name/Organization <span class="text-[#E0745F]">*</span>
-                </label>
-                <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
-                    <input
-                    type="text"
-                    id="organization"
-                    class="input-text w-full text-sm md:text-base"
-                    v-model="fields.name"
-                    required
-                    />
-                </div>
-                </article>
-
-                <!-- Phone Number -->
-                <article class="input-field w-full lg:w-138">
-                <label for="phone" class="label-text text-sm md:text-base">Phone Number</label>
-                <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
-                    <input
-                    type="tel"
-                    id="phone"
-                    class="input-text w-full text-sm md:text-base"
-                    v-model="fields.phone"
-                    />
-                </div>
-                </article>
-
-                <!-- Email -->
-                <article class="input-field w-full lg:w-138">
-                <label for="mail" class="label-text text-sm md:text-base">
-                    Email <span class="text-[#E0745F]">*</span>
-                </label>
-                <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
-                    <input
-                    type="email"
-                    id="mail"
-                    placeholder="Aa"
-                    class="input-text w-full text-sm md:text-base"
-                    v-model="fields.email"
-                    required
-                    />
-                </div>
-                </article>
-
-                <!-- Partnership Type -->
-                <article class="input-field w-full lg:w-138">
-                <label for="partnershipType" class="label-text text-sm md:text-base">
-                    Type of partnership (church, ministry, fellowship, org., etc.)
-                </label>
-                <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
-                    <input
-                    type="text"
-                    id="partnershipType"
-                    placeholder="Aa"
-                    class="input-text w-full text-sm md:text-base"
-                    v-model="fields.partnershipType"
-                    />
-                </div>
-                </article>
-
-                <!-- Message -->
-                <article class="input-field w-full lg:w-138">
-                <label for="message" class="label-text text-sm md:text-base">
-                    Message / Interest summary
-                </label>
-                <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-2xl md:rounded-[1.125rem] bg-white">
-                    <textarea
-                    id="message"
-                    cols="30"
-                    rows="6"
-                    placeholder="Aa"
-                    class="input-text w-full text-sm md:text-base resize-none"
-                    v-model="fields.message"
-                    />
-                </div>
-                </article>
-
-                <button
-                type="submit"
-                :disabled="loading"
-                class="w-full bg-[#A2B1A5] py-2.5 text-center mt-2 md:mt-[0.56rem] rounded-[625rem] text-darkTheme text-sm md:text-[1rem] font-medium leading-[1.4rem] hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
-                >
-                {{ loading ? 'Sending...' : 'Send Request' }}
-                </button>
-
-            </form>
+                <form class="flex flex-col gap-3 md:gap-4 w-full lg:w-auto" @submit.prevent="submit">
+                    <!-- Full Name / Organization -->
+                    <article class="input-field w-full lg:w-138">
+                    <label for="organization" class="label-text text-sm md:text-base">
+                        Full Name/Organization <span class="text-[#E0745F]">*</span>
+                    </label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input
+                        type="text"
+                        id="organization"
+                        class="input-text w-full text-sm md:text-base"
+                        v-model="form.name"
+                        required
+                        />
+                    </div>
+                    </article>
+                
+                    <!-- Phone -->
+                    <article class="input-field w-full lg:w-138">
+                    <label for="phone" class="label-text text-sm md:text-base">Phone Number</label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input
+                        type="tel"
+                        id="phone"
+                        class="input-text w-full text-sm md:text-base"
+                        v-model="form.phone"
+                        />
+                    </div>
+                    </article>
+                
+                    <!-- Email -->
+                    <article class="input-field w-full lg:w-138">
+                    <label for="mail" class="label-text text-sm md:text-base">
+                        Email <span class="text-[#E0745F]">*</span>
+                    </label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input
+                        type="email"
+                        id="mail"
+                        placeholder="Aa"
+                        class="input-text w-full text-sm md:text-base"
+                        v-model="form.email"
+                        required
+                        />
+                    </div>
+                    </article>
+                
+                    <!-- Partnership Type -->
+                    <article class="input-field w-full lg:w-138">
+                    <label for="partnershipType" class="label-text text-sm md:text-base">
+                        Type of partnership (church, ministry, fellowship, org., etc.)
+                    </label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white">
+                        <input
+                        type="text"
+                        id="partnershipType"
+                        placeholder="Aa"
+                        class="input-text w-full text-sm md:text-base"
+                        v-model="form.partnershipType"
+                        />
+                    </div>
+                    </article>
+                
+                    <!-- Message -->
+                    <article class="input-field w-full lg:w-138">
+                    <label for="message" class="label-text text-sm md:text-base">
+                        Message / Interest summary
+                    </label>
+                    <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-2xl md:rounded-[1.125rem] bg-white">
+                        <textarea
+                        id="message"
+                        cols="30"
+                        rows="6"
+                        placeholder="Aa"
+                        class="input-text w-full text-sm md:text-base resize-none"
+                        v-model="form.message"
+                        />
+                    </div>
+                    </article>
+                
+                    <button
+                    type="submit"
+                    :disabled="loading"
+                    class="w-full bg-[#A2B1A5] py-2.5 text-center mt-2 md:mt-[0.56rem] rounded-[625rem] text-darkTheme text-sm md:text-[1rem] font-medium leading-[1.4rem] hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
+                    >
+                    {{ loading ? 'Sending...' : 'Send Request' }}
+                    </button>
+                
+                </form>
           </section>
         </section>
     </section>
 </template>
 
 <script setup>
-import { reactive } from 'vue'
 import { useFormSubmit } from '@/composables/useFormSubmit'
 
 const slidingCardContents = [
@@ -209,47 +208,12 @@ const overlappingCardContent = [
         imgSrc: ''
     },
 ]
-
-// All local fields including ones not in the API body
-const fields = reactive({
-  name: '',
-  email: '',
-  phone: '',
-  partnershipType: '',
-  message: '',
-})
-
-const resetFields = () => {
-  Object.keys(fields).forEach((key) => (fields[key] = ''))
-}
-
-const { form, submit, loading } = useFormSubmit('PARTNERSHIP FORM', {
+ 
+const { form, submit, loading } = useFormSubmit('PARTNERSHIP', {
   successMessage: "Your partnership request has been sent! We'll be in touch soon.",
   errorMessage: 'Failed to send your request. Please try again.',
-  onSuccess: resetFields
+  extraFields: { partnershipType: '' },
 })
-
-const handleSubmit = () => {
-  // Map the standard fields into the composable form
-  form.name = fields.name
-  form.email = fields.email
-
-  // Append phone and partnership type to the bottom of the message
-  // so the admin sees them even though the API has no dedicated fields for them
-  const extras = [
-    fields.partnershipType ? `Partnership Type: ${fields.partnershipType}` : '',
-    fields.phone           ? `Phone Number: ${fields.phone}`               : '',
-  ]
-    .filter(Boolean)
-    .join('\n')
-
-  form.message = extras
-    ? `${fields.message ? fields.message + '\n\n' : ''}${extras}`
-    : fields.message
-
-  // Triggers the POST to https://api.paxify.org/api/contact
-  submit()
-}
 
 </script>
 
