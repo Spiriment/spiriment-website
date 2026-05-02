@@ -112,7 +112,7 @@
       <div v-else class="flex flex-col tabMid:flex-row  tabMid:gap-10 tabLarge:gap-14">
 
         <!-- ── Sidebar ── -->
-        <aside class="tabMid:w-[230px] tabLarge:w-[260px] flex-shrink-0">
+        <aside class="tabMid:w-[230px] tabLarge:w-[260px] shrink-0">
 
           <!-- Mobile: horizontal scrollable pills -->
           <!-- <div class="flex tabMid:hidden gap-2 overflow-x-auto pb-2 hide-scrollbar -mx-1 px-1">

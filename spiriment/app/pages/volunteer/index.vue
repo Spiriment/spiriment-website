@@ -53,50 +53,158 @@
       <h2 class="text-terracotaTheme header-text text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] w-full lg:w-[33.67%] text-center lg:text-left leading-tight">
          Ready to join the mission?
       </h2>
-   <form class="flex flex-col gap-3 md:gap-4 w-full lg:w-auto">
+        <form class="flex flex-col gap-3 md:gap-4 w-full lg:w-auto" @submit.prevent="handleSubmit">
+         <!-- Full Name / Organization -->
          <article class="input-field w-full lg:w-138">
-            <label for="organization" class="label-text text-terracotaTheme text-sm md:text-base">Full Name/Organization <span class="text-[#E0745F]">*</span></label>
+            <label for="organization" class="label-text text-terracotaTheme text-sm md:text-base">
+            Full Name/Organization <span class="text-[#E0745F]">*</span>
+            </label>
             <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="text" name="organization" id="organization" class="input-text w-full text-sm md:text-base">
+            <input
+               type="text"
+               id="organization"
+               name="organization"
+               class="input-text w-full text-sm md:text-base"
+               v-model="fields.name"
+               required
+            />
             </div>
          </article>
+
+         <!-- Phone Number -->
          <article class="input-field w-full lg:w-138">
             <label for="phone" class="label-text text-terracotaTheme text-sm md:text-base">Phone Number</label>
             <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="number" name="phone" id="phone" class="input-text w-full text-sm md:text-base">
+            <input
+               type="tel"
+               id="phone"
+               class="input-text w-full text-sm md:text-base"
+               v-model="fields.phone"
+            />
             </div>
          </article>
+
+         <!-- Email -->
          <article class="input-field w-full lg:w-138">
-            <label for="mail" class="label-text text-terracotaTheme text-sm md:text-base">Email <span class="text-[#E0745F]">*</span></label>
+            <label for="mail" class="label-text text-terracotaTheme text-sm md:text-base">
+            Email <span class="text-[#E0745F]">*</span>
+            </label>
             <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="email" name="mail" id="mail" placeholder="Aa" class="input-text w-full text-sm md:text-base">
+            <input
+               type="email"
+               id="mail"
+               placeholder="Aa"
+               class="input-text w-full text-sm md:text-base"
+               v-model="fields.email"
+               required
+            />
             </div>
          </article>
+
+         <!-- Skill -->
          <article class="input-field w-full lg:w-138">
-            <label for="skill" class="label-text text-terracotaTheme text-sm md:text-base">Skill or area you'd like to help in <span class="text-[#E0745F]">*</span></label>
+            <label for="skill" class="label-text text-terracotaTheme text-sm md:text-base">
+            Skill or area you'd like to help in <span class="text-[#E0745F]">*</span>
+            </label>
             <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="text" name="skill" id="skill" placeholder="Aa" class="input-text w-full text-sm md:text-base">
+            <input
+               type="text"
+               id="skill"
+               placeholder="Aa"
+               class="input-text w-full text-sm md:text-base"
+               v-model="fields.skill"
+               required
+            />
             </div>
          </article>
+
+         <!-- Portfolio Link -->
          <article class="input-field w-full lg:w-138">
-            <label for="partnershipType" class="label-text text-terracotaTheme text-sm md:text-base">Link to portfolio or past work</label>
+            <label for="portfolio" class="label-text text-terracotaTheme text-sm md:text-base">
+            Link to portfolio or past work
+            </label>
             <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[624.9rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <input type="text" name="partnershipType" id="partnershipType" placeholder="Aa" class="input-text w-full text-sm md:text-base">
+            <input
+               type="url"
+               id="portfolio"
+               placeholder="https://"
+               class="input-text w-full text-sm md:text-base"
+               v-model="fields.portfolio"
+            />
             </div>
          </article>
+
+         <!-- Why you'd like to volunteer -->
          <article class="input-field w-full lg:w-138">
-            <label for="message" class="label-text text-terracotaTheme text-sm md:text-base">Why you'd like to volunteer</label>
+            <label for="message" class="label-text text-terracotaTheme text-sm md:text-base">
+            Why you'd like to volunteer
+            </label>
             <div class="mt-2 md:mt-[0.57rem] py-2 md:py-[0.66rem] px-3 md:px-[0.813rem] rounded-[1rem] md:rounded-[1.125rem] bg-white border-[#F5D4CD] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] border">
-               <textarea name="message" id="message" cols="30" rows="6" class="input-text w-full text-sm md:text-base resize-none" placeholder="Aa"></textarea>
+            <textarea
+               id="message"
+               cols="30"
+               rows="6"
+               placeholder="Aa"
+               class="input-text w-full text-sm md:text-base resize-none"
+               v-model="fields.message"
+            />
             </div>
          </article>
-         <button class="w-full bg-[#EAA294] py-2.5 text-center mt-2 md:mt-[0.56rem] rounded-[625rem] text-terracotaTheme text-sm md:text-[1rem] font-medium leading-[1.4rem] hover:opacity-90 transition-opacity">Submit</button>
-   </form>
+
+         <button
+            type="submit"
+            :disabled="loading"
+            class="w-full bg-[#EAA294] py-2.5 text-center mt-2 md:mt-[0.56rem] rounded-[625rem] text-terracotaTheme text-sm md:text-[1rem] font-medium leading-[1.4rem] hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
+         >
+            {{ loading ? 'Submitting...' : 'Submit' }}
+         </button>
+
+      </form>
 </section>
 </template>
 
 <script setup>
+import { reactive } from 'vue'
+import { useFormSubmit } from '@/composables/useFormSubmit'
 
+const fields = reactive({
+  name: '',
+  email: '',
+  phone: '',
+  skill: '',
+  portfolio: '',
+  message: '',
+})
+
+const resetFields = () => {
+  Object.keys(fields).forEach((key) => (fields[key] = ''))
+}
+
+const { form, submit, loading } = useFormSubmit('VOLUNTEER FORM', {
+  successMessage: "Thank you for volunteering! We'll reach out to you shortly.",
+  errorMessage: 'Failed to submit your application. Please try again.',
+  onSuccess: resetFields
+})
+
+const handleSubmit = () => {
+  form.name  = fields.name
+  form.email = fields.email
+
+  // Append phone, skill and portfolio to the bottom of the message
+  const extras = [
+    fields.skill     ? `Skill / Area: ${fields.skill}`         : '',
+    fields.phone     ? `Phone Number: ${fields.phone}`         : '',
+    fields.portfolio ? `Portfolio: ${fields.portfolio}`        : '',
+  ]
+    .filter(Boolean)
+    .join('\n')
+
+  form.message = extras
+    ? `${fields.message ? fields.message + '\n\n' : ''}${extras}`
+    : fields.message
+
+  submit()
+}
 </script>
 
 <style lang="scss" scoped>
