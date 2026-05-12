@@ -1,8 +1,9 @@
+[build]
+   base = "spiriment"
+  command = "npm run build"
+  publish = ".output/public"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  [build]
-  base = "spiriment"
-  command = "npm run build"
-  publish = ".output/public"
