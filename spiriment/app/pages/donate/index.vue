@@ -2,7 +2,7 @@
     <section class="custom-width pt-8 md:pt-12 lg:pt-[5.94rem] mb-8 md:mb-10 lg:mb-[7.63rem] lg:px-0">
         <div class="w-full md:w-[80%] lg:w-[70%] xl:w-[61.17%] mx-auto text-center pb-8 md:pb-10 lg:pb-[5.88rem]">
             <h1 class="header-text text-terracotaTheme text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-tight">
-                Help us build a platform where anyone can grow in faith
+                Help us build a platform where anyone can grow in faith.
             </h1>
             <p class="mt-4 md:mt-5 lg:mt-6 mb-6 md:mb-7 lg:mb-8 small-texts text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] text-[#4F4F4F]">
                 Your support makes it possible for more people to benefit from our platform, deepening their faith through mentorship, study, and daily spiritual habits.
